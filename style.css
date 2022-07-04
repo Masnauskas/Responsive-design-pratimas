@@ -1,0 +1,112 @@
+.main-wrapper {
+  background-color: white;
+}
+.header-style {
+  text-align: center;
+  background-color: yellow;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbox {
+  background-color: orange;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  height: 60%;
+  margin-right: 20px;
+}
+.box {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  flex: 3;
+}
+
+footer {
+  background-color: lightpink;
+  border-radius: 10px;
+}
+@media screen and (min-width: 936px) {
+  #bandymas-1 {
+    margin-right: 150px;
+    height: 80%;
+  }
+  #bandymas-2 {
+    height: 70%;
+  }
+  .box:nth-child(-n + 3) {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.navbox {
+    display: none;
+  }
+
+  div.container {
+    flex-direction: column;
+  }
+
+  div.box {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  div.nav {
+    display: none;
+  }
+}
+
+.nav {
+  background-color: orange;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  div.navbox {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2.disappear-480 {
+    display: none;
+  }
+}
+@media screen and (max-width: 936px) and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    box-sizing: border-box;
+  }
+  .box-c {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .box-a {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 60%;
+  }
+  .navbox {
+    height: 50%;
+  }
+
+  #bandymas-2 {
+    height: 80%;
+  }
+}
